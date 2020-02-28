@@ -9,7 +9,6 @@ namespace PipelineToolkit {
         private double posInSpline = 0.0;
         private double lengthNode = 0.0;
         private float customValue = 0.0f;
-        
 
         public Transform Transform {
             get { 
@@ -64,7 +63,6 @@ namespace PipelineToolkit {
 				spline = value;
 			}
         }
-		
 
         public void ResetNode() {
             posInSpline = 0f;

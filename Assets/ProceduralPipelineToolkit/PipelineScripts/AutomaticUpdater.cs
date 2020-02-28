@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System;
 
 namespace PipelineToolkit {
 	
@@ -7,7 +6,8 @@ namespace PipelineToolkit {
 		
 		public static UpdateMode mode = UpdateMode.EveryFrame;	
 		public static float deltaSeconds = 0.1f; 				
-		public static int deltaFrames = 2; 					
+		public static int deltaFrames = 2;
+		
 		private static float passedTime;
 		
 		public static bool Update(){
@@ -34,8 +34,6 @@ namespace PipelineToolkit {
 			
 			return false;
 		}
-		
-		
-		
+
 	}
 }

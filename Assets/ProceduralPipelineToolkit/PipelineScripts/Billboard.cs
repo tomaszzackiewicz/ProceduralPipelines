@@ -1,18 +1,17 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 namespace PipelineToolkit {
 
     public class Billboard : MonoBehaviour {
 		
-        private Camera camera;
+        private Camera mainCamera;
 
         private void Start() {
-            camera = Camera.main;
+            mainCamera = Camera.main;
         }
 
         private void LateUpdate() {
-            transform.LookAt(transform.position + camera.transform.rotation * Vector3.forward,camera.transform.rotation * Vector3.up);
+            transform.LookAt(transform.position + mainCamera.transform.rotation * Vector3.forward,mainCamera.transform.rotation * Vector3.up);
         }
     }
 }

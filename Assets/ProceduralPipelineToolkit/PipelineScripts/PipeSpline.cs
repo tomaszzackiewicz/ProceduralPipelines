@@ -12,6 +12,7 @@ namespace PipelineToolkit {
         public bool autoClose = false;
         public float tension = 0.5f;
         public Vector3 tanUpVector = Vector3.up;
+
         private int interpolationAccuracy = 5;
         private LengthData lengthData = new LengthData();
 		private PipelineNodes pipelineNodes;
